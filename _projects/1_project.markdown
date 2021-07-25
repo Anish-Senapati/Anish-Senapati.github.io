@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Signomial Optimization
+description: Constraint generation of Power Cones
 img: /assets/img/12.jpg
 importance: 1
 category: work

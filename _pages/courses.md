@@ -1,0 +1,32 @@
+---
+layout: page
+permalink: /courses/
+title: courses
+description: Some of the courses I have taken in my studies (For brevity, I mainly included classes in my major)
+nav: true
+---
+
+## Spring 2021
+- ACM 157: Statistical Inference
+
+## Winter 2021
+- ACM/EE 106B: Introductory Methods of Computational Mathematics (PDE Analysis)
+- ACM/IDS 101B: Methods of Applied Mathematics (PDE's in general domains)
+- ACM/IDS 216: Markov Chains, Discrete Stochastic Processes and Applications
+
+## Fall 2020
+- ACM/EE 106A: Introductory Methods of Computational Mathematics (Numerical Linear Algebra)
+- ACM/IDS 101A: Methods of Applied Mathematics (Asymptotic Expansions)
+- ACM 116: Introduction to Probabilty Models
+
+## Spring 2020
+- ACM 95B: Introductory Methods of Applied Mathematics for the Physical Sciences (Differential Equations in Physical Sciences)
+- CS 156b: Learning Systems (COVID 19 Project)
+
+## Winter 2020
+- ACM 95A: Introductory Methods of Applied Mathematics for the Physical Sciences (Complex Analysis)
+- CS 155: Machine Learning and Data Mining
+
+## Fall 2019
+- ACM/IDS 104: Applied Linear Algrebra
+- CS 156A: Learning Systems
