@@ -9,7 +9,11 @@ category: work
 
 Certifying function nonnegativity is a prevalent problem in applied mathematics with applications in optimization and engineering. 
 
-A signomial is a function $f$ defined by $$ \bf{x} \mapsto \sum_{i=1}^m c_i \exp(\bf{a}_i \cdot \bf{x}) $$ for $$c \in \mathbf{R}^m$$ and vectors $$ \bf{a}_i \in \mathbb{R}^n $$.
+A signomial is a function $$f$$ defined by 
+
+$$ \bf{x} \mapsto \sum_{i=1}^m c_i e^{(\bf{a}_i \cdot \bf{x})} $$ 
+
+for $$c \in \mathbf{R}^m$$ and vectors $$ \bf{a}_i \in \mathbb{R}^n $$.
 
 Signomial programming (SP) is a prevalent problem in aircraft design and structural engineering. Additional applications in EE, communications, and ML.
 
