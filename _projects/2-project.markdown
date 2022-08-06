@@ -15,13 +15,13 @@ $$
 [c]{ll}%
 \mbox{minimize} & \textbf{c}^{T}
 \textbf{x}\\
-\mbox{subject to} & \mathrm{Prob} \{\phi(\textbf{x},\textbf{\xi}) > 0\}\leq \delta.\\
+\mbox{subject to} & \mathrm{Prob} \{\phi(\textbf{x},\mathbf{\xi}) > 0\}\leq \delta.\\
 \end{array}
 \end{align}
 $$
 
-where $$\textbf{x}\in\mathbb{R}^{m}$$ is an $$m$$-dimensional decision variable, and $$\textbf{\xi}\in\mathbb{R}^{n}$$ is an $$n$$-dimensional random vector. The elements of $$\textbm{\xi}$$ are often referred to as risk factors; the function 
-$$\phi: \mathbb{R}^{m}\times\mathbb{R}^{n}
+where $$\textbf{x}\in\mathbb{R}^{m}$$ is an $$m$$-dimensional decision variable, and $$\textbf{\xi}\in\mathbb{R}^{n}$$ is an $$n$$-dimensional random vector. 
+The elements of $$\mathbf{\xi}$$ are often referred to as risk factors; the function $$\phi: \mathbb{R}^{m}\times\mathbb{R}^{n}
 \rightarrow\mathbb{R}$$ is often assumed to be convex in $$\textbf{x}$$ and models a cost constraint; the parameter
 $$\delta> 0$$ is the risk level of the tolerance.
 
@@ -40,7 +40,7 @@ $$
 where $$F_X: \mathbb{R}\rightarrow[0,1]$$ is the cumulative distribution function of $$X$$. Optimization with Var constraints has limitations in modelling and tractability aspects for various reasons including:
 * VaR does not control scenarios exceeding VaR.
 * VaR fails to meet the subadditivity axiom, so it is not 'coherent'. 'coherent' is a desirable properties for risk measures.
-* Evaluation of $$\mathrm{VaR}_{1-\delta}\{\phi(\textbf{x},\textbf{\xi})\}$$ usually involves integration over $$\textbf{\xi}$$, which is computationally intractable.
+* Evaluation of $$\mathrm{VaR}_{1-\delta}\{\phi(\textbf{x},\mathbf{\xi})\}$$ usually involves integration over $$\textbf{\xi}$$, which is computationally intractable.
 
 
 For these reasons, a second risk measure called conditional value at risk (CVar) is motivated for such risk-constrained optimization problems.
@@ -71,7 +71,7 @@ $$
 \mbox{minimize} & \textbf{c}^{T}
 \textbf{x}\\
 \mbox{subject to} & 
-\mathrm{CVaR}_{1-\gamma}{\phi(\textbf{x},\textbf{\xi})}
+\mathrm{CVaR}_{1-\gamma}{\phi(\textbf{x},\mathbf{\xi})}
 \leq 0.\\
 \end{array}
 \end{align}
