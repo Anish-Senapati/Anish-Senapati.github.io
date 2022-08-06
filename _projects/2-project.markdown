@@ -39,12 +39,12 @@ $$
 
 where $$F_X: \mathds{R}\rightarrow[0,1]$$ is the cumulative distribution function of $$X$$. Optimization with Var constraints has limitations in modelling and tractability aspects for various reasons including:
 * VaR does not control scenarios exceeding VaR.
-* VaR fails to meet the subadditivity axiom, so it is not ``coherent''. ``coherent'' is a desirable properties for risk measures proposed by \cite{artzner1999coherent}.
+* VaR fails to meet the subadditivity axiom, so it is not 'coherent'. 'coherent' is a desirable properties for risk measures.
 * Evaluation of $\mathrm{VaR}_{1-\delta}\{\phi(\bm{x},\bm{\xi})\}$ usually involves integration over $\bm{\xi}$, which is computationally intractable.
 
 
 For these reasons, a second risk measure called conditional value at risk (CVar) is motivated for such risk-constrained optimization problems.
-The CVaR at level $\alpha \in (0,1)$ for a loss random variable $X$ is defined as
+The CVaR at level $$\alpha \in (0,1)$$ for a loss random variable $X$ is defined as
 
 $$
 \begin{align*}
