@@ -4,7 +4,7 @@ title: Signomial Optimization
 description: Constraint generation of Power Cones
 img: /assets/img/cut_generation.png
 importance: 1
-category: work
+category: research
 ---
 
 Certifying function nonnegativity is a prevalent problem in applied mathematics with applications in optimization and engineering. 

@@ -4,7 +4,7 @@ title: CVaR Optimization
 description: Chance-constrained optimization for conditional value-at-risk problems
 img: /assets/img/cvar_header.png
 importance: 1
-category: work
+category: research
 ---
 Within this project, we consider optimization problems with risk constraints, looking to confine the violation probability. These optimization problems can be formulated as,
 
