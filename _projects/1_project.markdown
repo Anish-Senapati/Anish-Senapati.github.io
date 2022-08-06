@@ -16,7 +16,7 @@ Signomial programming (SP) is a prevalent problem in aircraft design and structu
 In general, a signomial optimization problem is intractable. So how do we approach solving these problems? We look at very specific cases of such signomial programs.
 For instance, what is we limited ourself to signomials which only have one negative term? Or what if we limited the domain of the optimimization problem?
 
-For a signomial $$f(\bf{x}) = \sum_{i=1}^m c_i \exp(\bf{a}_i^\intercal \bf{x})$$, if $$\bf{c} \in \mathbb{R}^m$ has $\bf{c}$$ has at most one negative term, then we call such a signomial $$ \textbf{AGE}$$. 
+For a signomial $$f(\bf{x}) = \sum_{i=1}^m c_i \exp(\bf{a}_i^\intercal \bf{x})$$, if $$\bf{c} \in \mathbb{R}^m$$ has $$\bf{c}$$ has at most one negative term, then we call such a signomial $$ \textbf{AGE}$$. 
 A signomial is called $$\textbf{SAGE}$$ if it is the sum of AGE signomials.
 
 
