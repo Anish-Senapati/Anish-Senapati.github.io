@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /courses/
-title: courses
+title: Courses
 description: Some of the courses I have taken in my studies (For brevity, I mainly included classes in my major)
 nav: true
 ---
