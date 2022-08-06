@@ -57,10 +57,10 @@ $$
 
 The graph below displays a more intuitive difference between VaR and CVaR for the same loss function.
 
-![image](/assets/images/cvar-header.jpg)
+![image](/assets/img/cvar_header.png)
 
-Initially introduced by Nemirovski and Shapiro, they showed CVaR is a tight convex approximation of VaR and \eqref{eq-cvar-opt} is a convex approximation of 
-\eqref{eq-var-opt}. Thus, the CVaR constrained optimization problem accounts for many of the limitations VaR constraints possess making it an appealing approximation to 
+Initially introduced by Nemirovski and Shapiro, they showed CVaR is a tight convex approximation of VaR. Thus, the CVaR constrained optimization 
+problem accounts for many of the limitations VaR constraints possess making it an appealing approximation to 
 solve. Specifically, we concentrate on the following relaxed CVaR constrained optimization problem:
 
 $$
@@ -77,5 +77,7 @@ $$
 \end{align}
 $$
 
+As CVaR is a convex approximation of VaR, $$\eqref{eq-cvar-opt}$$ is a convex approximation of 
+$$\eqref{eq-var-opt}$$
 
 You can download the final paper for my work [here](https://anish-senapati.github.io/assets/pdf/SURF_2020_Final_Project.pdf). 
