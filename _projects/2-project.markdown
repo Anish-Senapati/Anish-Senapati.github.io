@@ -78,6 +78,6 @@ $$
 $$
 
 As CVaR is a convex approximation of VaR, $$\eqref{eq-cvar-opt}$$ is a convex approximation of 
-$$\eqref{eq-var-opt}$$
+$$\eqref{eq-chance-opt}$$
 
 You can download the final paper for my work [here](https://anish-senapati.github.io/assets/pdf/SURF_2020_Final_Project.pdf). 
