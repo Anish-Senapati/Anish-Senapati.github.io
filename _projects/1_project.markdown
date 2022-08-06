@@ -24,4 +24,4 @@ SAGE-based optimization techniques are traditionally done with a type of convex 
 This project focused on developing a new way to optimize SAGE signomials. We proposed and optimized an efficient cut generation approach to identify and add power cones into the nonnegativity cone of interest.
 
 
-You can download the final paper for my work [here](https://anish-senapati.github.io/assets/pdf/SURF_2021.pdf) here. 
+You can download the final paper for my work [here](https://anish-senapati.github.io/assets/pdf/SURF_2021.pdf). 

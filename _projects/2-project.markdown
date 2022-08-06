@@ -72,4 +72,4 @@ $$
 $$
 
 
-You can download the final paper for my work [here](https://anish-senapati.github.io/assets/pdf/SURF_2020_Final_Project.pdf) here. 
+You can download the final paper for my work [here](https://anish-senapati.github.io/assets/pdf/SURF_2020_Final_Project.pdf). 
