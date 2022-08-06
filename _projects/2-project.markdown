@@ -13,16 +13,16 @@ $$
 \label{eq-chance-opt}
 \begin{array}
 [c]{ll}%
-\mbox{minimize} & \bm{c}^{T}
-\bm{x}\\
-\mbox{subject to} & \mathrm{Prob} \{\phi(\bm{x},\bm{\xi}) > 0\}\leq \delta.\\
+\mbox{minimize} & \textbf{c}^{T}
+\textbf{x}\\
+\mbox{subject to} & \mathrm{Prob} \{\phi(\textbf{x},\textbf{\xi}) > 0\}\leq \delta.\\
 \end{array}
 \end{align}
 $$
 
-where $$\bm{x}\in\mathds{R}^{m}$$ is an $$m$$-dimensional decision variable, and $$\bm{\xi}\in\mathds{R}^{n}$$ is an $$n$$-dimensional random vector. The elements of $$\bm{\xi}$$ are often referred to as risk factors; the function 
-$$\phi: \mathds{R}^{m}\times\mathds{R}^{n}
-\rightarrow\mathds{R}$$ is often assumed to be convex in $$\bm{x}$$ and models a cost constraint; the parameter
+where $$\textbf{x}\in\mathbb{R}^{m}$$ is an $$m$$-dimensional decision variable, and $$\textbf{\xi}\in\mathbb{R}^{n}$$ is an $$n$$-dimensional random vector. The elements of $$\bm{\xi}$$ are often referred to as risk factors; the function 
+$$\phi: \mathbb{R}^{m}\times\mathbb{R}^{n}
+\rightarrow\mathbb{R}$$ is often assumed to be convex in $$\textbf{x}$$ and models a cost constraint; the parameter
 $$\delta> 0$$ is the risk level of the tolerance.
 
 
@@ -31,13 +31,13 @@ The probabilistic constraint in $$\eqref{eq-chance-opt}$$ can be reformulated us
 
 $$
 \begin{align*}
-    \var{\alpha}{X}
-    = \min\{z\in\mathds{R}: F_X(z)\geq \alpha\},
+    \mathrm{VaR}_{\alpha}{X}
+    = \min\{z\in\mathbb{R}: F_X(z)\geq \alpha\},
 \end{align*}
 $$
 
 
-where $$F_X: \mathds{R}\rightarrow[0,1]$$ is the cumulative distribution function of $$X$$. Optimization with Var constraints has limitations in modelling and tractability aspects for various reasons including:
+where $$F_X: \mathbb{R}\rightarrow[0,1]$$ is the cumulative distribution function of $$X$$. Optimization with Var constraints has limitations in modelling and tractability aspects for various reasons including:
 * VaR does not control scenarios exceeding VaR.
 * VaR fails to meet the subadditivity axiom, so it is not 'coherent'. 'coherent' is a desirable properties for risk measures.
 * Evaluation of $\mathrm{VaR}_{1-\delta}\{\phi(\bm{x},\bm{\xi})\}$ usually involves integration over $\bm{\xi}$, which is computationally intractable.
@@ -48,24 +48,24 @@ The CVaR at level $$\alpha \in (0,1)$$ for a loss random variable $X$ is defined
 
 $$
 \begin{align*}
-    \cvar{\alpha}{X} = 
+    \mathrm{CVaR}_{\alpha}{X} = 
     \frac{1}{1-\alpha}
     \int_{\alpha}^{1} 
     \mathrm{VaR}_{\beta}\{X\} d\beta.
 \end{align*}
 $$
 
-Specifically, we concentrate on the following CVaR constrained optimization problem:
+Specifically, we concentrate on the following relaxed CVaR constrained optimization problem:
 
 $$
 \begin{align}
 \label{eq-cvar-opt}
 \begin{array}
 [c]{ll}%
-\mbox{minimize} & \bm{c}^{T}
-\bm{x}\\
+\mbox{minimize} & \textbf{c}^{T}
+\textbf{x}\\
 \mbox{subject to} & 
-\cvar{1-\gamma}{\phi(\bm{x},\bm{\xi})}
+\mathrm{CVaR}_{1-\gamma}{\phi(\textbf{x},\textbf{\xi})}
 \leq 0.\\
 \end{array}
 \end{align}
