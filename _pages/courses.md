@@ -5,6 +5,8 @@ title: Courses
 description: Some of the courses I have taken in my studies (For brevity, I mainly included classes in my major)
 nav: true
 ---
+
+# Caltech
 ## Spring 2022
 - ACM 213: Topics in Optimization
 - CS 159: Topics in Machine Learning (Representation Learning for Science)
