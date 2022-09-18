@@ -11,7 +11,7 @@
   Anish  Senapati
 
 
-  | blog
+  | Signomial Optimization
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/1_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,11 +101,9 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -173,18 +171,34 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Random Thoughts</h1>
-    <h2>Talking about parts of my life</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Signomial Optimization</h1>
+    <p class="post-description">Constraint generation of Power Cones</p>
+  </header>
 
+  <article>
+    <p>Certifying function nonnegativity is a prevalent problem in applied mathematics with applications in optimization and engineering.</p>
 
-  <ul class="post-list">
-    
-  </ul>
+<p>A signomial is a function \(f\) defined by</p>
 
-  
+\[\bf{x} \mapsto \sum_{i=1}^m c_i e^{(\bf{a}_i \cdot \bf{x})}\]
 
+<p>for \(c \in \mathbf{R}^m\) and vectors \(\bf{a}_i \in \mathbb{R}^n\).</p>
+
+<p>Signomial programming (SP) is a prevalent problem in aircraft design and structural engineering. Additional applications in EE, communications, and ML.</p>
+
+<p>In general, a signomial optimization problem is intractable. So how do we approach solving these problems? We look at very specific cases of such signomial programs.
+For instance, what is we limited ourself to signomials which only have one negative term? Or what if we limited the domain of the optimimization problem?</p>
+
+<p>For a signomial \(f(\bf{x}) = \sum_{i=1}^m c_i \exp(\bf{a}_i^\intercal \bf{x})\), if \(\bf{c} \in \mathbb{R}^m\) has \(\bf{c}\) has at most one negative term, then we call such a signomial \(\textbf{AGE}\). 
+A signomial is called \(\textbf{SAGE}\) if it is the sum of AGE signomials.</p>
+
+<p>SAGE-based optimization techniques are traditionally done with a type of convex optimization called relative entropy programming.
+This project focused on developing a new way to optimize SAGE signomials. We proposed and optimized an efficient cut generation approach to identify and add power cones into the nonnegativity cone of interest.</p>
+
+<p>You can download the final paper for my work <a href="https://anish-senapati.github.io/assets/pdf/SURF_2021.pdf">here</a>.</p>
+
+  </article>
 
 </div>
 

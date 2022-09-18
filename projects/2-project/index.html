@@ -11,7 +11,7 @@
   Anish  Senapati
 
 
-  | blog
+  | CVaR Optimization
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/2-project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,11 +101,9 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -173,18 +171,79 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Random Thoughts</h1>
-    <h2>Talking about parts of my life</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">CVaR Optimization</h1>
+    <p class="post-description">Chance-constrained optimization for conditional value-at-risk problems</p>
+  </header>
 
+  <article>
+    <p>Within this project, we consider optimization problems with risk constraints, looking to confine the violation probability. These optimization problems can be formulated as,</p>
 
-  <ul class="post-list">
-    
-  </ul>
+\[\begin{align}
+\label{eq-chance-opt}
+\begin{array}
+[c]{ll}%
+\mbox{minimize} &amp; \textbf{c}^{T}
+\textbf{x}\\
+\mbox{subject to} &amp; \mathrm{Prob} \{\phi(\textbf{x},\mathbf{\xi}) &gt; 0\}\leq \delta.\\
+\end{array}
+\end{align}\]
 
-  
+<p>where \(\textbf{x}\in\mathbb{R}^{m}\) is an \(m\)-dimensional decision variable, and \(\textbf{\xi}\in\mathbb{R}^{n}\) is an \(n\)-dimensional random vector. 
+The elements of \(\mathbf{\xi}\) are often referred to as risk factors; the function \(\phi: \mathbb{R}^{m}\times\mathbb{R}^{n}
+\rightarrow\mathbb{R}\) is often assumed to be convex in \(\textbf{x}\) and models a cost constraint; the parameter
+\(\delta&gt; 0\) is the risk level of the tolerance.</p>
 
+<p>The probabilistic constraint in \(\eqref{eq-chance-opt}\) can be reformulated using a risk measure called value-at-risk (VaR). The VaR at level \(\alpha \in (0,1)\) for a loss random variable \(X\) is defined as</p>
+
+\[\begin{align*}
+    \mathrm{VaR}_{\alpha}{X}
+    = \min\{z\in\mathbb{R}: F_X(z)\geq \alpha\},
+\end{align*}\]
+
+<p>where \(F_X: \mathbb{R}\rightarrow[0,1]\) is the cumulative distribution function of \(X\). Optimization with Var constraints has limitations in modelling and tractability aspects for various reasons including:</p>
+<ul>
+  <li>VaR does not control scenarios exceeding VaR.</li>
+  <li>VaR fails to meet the subadditivity axiom, so it is not ‘coherent’. ‘coherent’ is a desirable properties for risk measures.</li>
+  <li>Evaluation of \(\mathrm{VaR}_{1-\delta}\{\phi(\textbf{x},\mathbf{\xi})\}\) usually involves integration over \(\textbf{\xi}\), which is computationally intractable.</li>
+</ul>
+
+<p>For these reasons, a second risk measure called conditional value at risk (CVar) is motivated for such risk-constrained optimization problems.
+The CVaR at level \(\alpha \in (0,1)\) for a loss random variable \(X\) is defined as</p>
+
+\[\begin{align*}
+    \mathrm{CVaR}_{\alpha}{X} = 
+    \frac{1}{1-\alpha}
+    \int_{\alpha}^{1} 
+    \mathrm{VaR}_{\beta}\{X\} d\beta.
+\end{align*}\]
+
+<p>The graph below displays a more intuitive difference between VaR and CVaR for the same loss function.</p>
+
+<p><img src="/assets/img/cvar_header.png" alt="image" /></p>
+
+<p>Initially introduced by Nemirovski and Shapiro, they showed CVaR is a tight convex approximation of VaR. Thus, the CVaR constrained optimization 
+problem accounts for many of the limitations VaR constraints possess making it an appealing approximation to 
+solve. Specifically, we concentrate on the following relaxed CVaR constrained optimization problem:</p>
+
+\[\begin{align}
+\label{eq-cvar-opt}
+\begin{array}
+[c]{ll}%
+\mbox{minimize} &amp; \textbf{c}^{T}
+\textbf{x}\\
+\mbox{subject to} &amp; 
+\mathrm{CVaR}_{1-\gamma}{\phi(\textbf{x},\mathbf{\xi})}
+\leq 0.\\
+\end{array}
+\end{align}\]
+
+<p>As CVaR is a convex approximation of VaR, \(\eqref{eq-cvar-opt}\) is a convex approximation of 
+\(\eqref{eq-chance-opt}\)</p>
+
+<p>You can download the final paper for my work <a href="https://anish-senapati.github.io/assets/pdf/SURF_2020_Final_Project.pdf">here</a>.</p>
+
+  </article>
 
 </div>
 
