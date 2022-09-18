@@ -15,6 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an upcoming PhD student at Stanford ICME (Institute for Computational and Mathematical Engineering). I did my undergraduate at the California Insitiute of Technology (Caltech) studying Applied and Computational Mathematics 
-with a minor in Computer Science. Broadly speaking, my research interests are in the modeling of stochastic processes in real world and engineering applications and building efficient computational algorithms for the optimization and 
-uncertainty quantification of such models. At Caltech, I have done research in the field of convex/smooth optimization and rare event simulation with some awesome collaborator. 
+I am an upcoming Ph.D. student at Stanford ICME (Institute for Computational and Mathematical Engineering). I did my undergraduate at the California Institute of Technology (Caltech) in Applied and Computational Mathematics with a minor in Computer Science. 
+Broadly speaking, my research interests are in the modeling of stochastic processes in real-world applications and 
+building provably efficient algorithms for the optimization of such models. I especially enjoy problems at the intersection of continuous optimization, statistics, and machine learning. 
+At Caltech, I have done research in the fields of convex/smooth optimization and rare event simulation with some awesome collaborators.  
