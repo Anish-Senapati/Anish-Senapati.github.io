@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: "Hi there!"
+description: "Hi!"
 profile:
   align: right
   image: pic_front.jpg
@@ -15,7 +15,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an upcoming Ph.D. student at Stanford ICME (Institute for Computational and Mathematical Engineering). I did my undergraduate at the California Institute of Technology (Caltech) in Applied and Computational Mathematics with a minor in Computer Science. 
+I am a first year Ph.D. student at Stanford ICME (Institute for Computational and Mathematical Engineering). I did my undergraduate at the California Institute of Technology (Caltech) in Applied and Computational Mathematics with a minor in Computer Science. 
 Broadly speaking, my research interests are in the modeling of stochastic processes in real-world applications and 
-building provably efficient algorithms for the optimization of such models. I especially enjoy problems at the intersection of continuous optimization, statistics, and machine learning. 
-At Caltech, I have done research in the fields of convex/smooth optimization and rare event simulation with some awesome collaborators.  
+building provably efficient and robust algorithms for the optimization of such models. I especially enjoy problems at the intersection of continuous optimization, statistics, and machine learning. 
+At Caltech, I have done research in the fields of convex/smooth optimization and rare event simulation with some awesome collaborators listed in reverse chronological order: 
+Matthew Levine, Riley Murray, Adam Wierman, Fan Zhang, Bert Zwart, Jose Blanchet, Bamdad Hosseini, Alessandro Zocca, Alfredo Garbuno-Inigo, and Andrew Stuart.
